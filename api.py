@@ -33,5 +33,4 @@ class YunRealtimeHeartRateAPI(Resource):
     def get(self):
         """Get heart rate data."""
         heart_rate = get_heart_rate(fake=True)
-        print(heart_rate.json)
         return heart_rate.json
